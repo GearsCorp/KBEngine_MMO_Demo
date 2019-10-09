@@ -58,8 +58,26 @@
 		
 		<databaseInterfaces>
 			<default>
-				<!-- <host> localhost </host> -->
-				<!-- <databaseName> kbe </databaseName> -->
+				<host> 129.28.175.241 </host>										<!-- Type: String -->
+				<port> 3306 </port>												<!-- Type: Integer -->
+
+				<!-- 数据库账号验证
+					（Database auth)
+				-->
+				<auth>
+					<username> kbe_mmorpg_user </username>									<!-- Type: String -->
+					<password> NIZIaiweiba9 </password>							<!-- Type: String -->
+
+					<!-- 为true则表示password是加密(rsa)的, 可防止明文配置
+						(is true, password is RSA)
+					-->
+					<encrypt> true </encrypt>
+				</auth>
+
+				<!-- 数据库名称
+					(Database name)
+				-->
+				<databaseName> kbe_mmorpg_sql </databaseName> 								<!-- Type: String -->
 			</default>
 		</databaseInterfaces>
 	</dbmgr>
