@@ -38,3 +38,7 @@ class Account(KBEngine.Proxy):
 		"""
 		DEBUG_MSG("Account[%i].onClientDeath:" % self.id)
 		self.destroy()
+
+	def createAvatar(self,avatarName,avatarType):
+		DEBUG_MSG("Account::createAvatar Name = [%s] Type = [%i]" % (avatarName,avatarType));
+		pass;

@@ -1,11 +1,19 @@
 <root>
 	<Properties>
+		<AvatarList>
+			<Type>			AVATAR_LIST				</Type>
+		</AvatarList>
 	</Properties>
 
 	<ClientMethods>
 	</ClientMethods>
 
 	<BaseMethods>
+		<createAvatar>
+			<Exposed/>
+			<Arg>			UNICODE 				</Arg>
+			<Arg>			UINT8 					</Arg>
+		</createAvatar>
 	</BaseMethods>
 
 	<CellMethods>
